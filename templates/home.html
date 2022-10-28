@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Averiguar el tipo de Flor </title>
+</head>
+
+<body>
+      <h1>¿A que especie pertenece? </h1>
+
+      <h1>¡DESCÚBRELO! </h1>
+   
+    <div class="general">
+      <form action="{{ url_for('predict')}}"method="post">
+          
+          <div>
+              <h2 class="sep_len">Sepal Length</h2>
+  
+              <input type="text" name="sepal_length" value="3" placeholder="Enter Sepal_Length  " required="required"/>
+  
+          </div>
+  
+          <div>
+              <h2 class="sep_wid">Sepal Width</h2>
+  
+              <input type="text" name="sepal_width" value="4" placeholder="Enter Sepal_Width" required="required"/>
+  
+          </div>
+
+          <div>
+            <h2 class="pet_len">Petal Length</h2>
+
+            <input type="text" name="petal_length" value="3" placeholder="Enter Petal_Length  " required="required"/>
+
+        </div>
+
+
+        <div>
+            <h2 class="pet_wid">Petal Width</h2>
+
+            <input type="text" name="petal_width" value="2" placeholder="Enter Petal_Width" required="required"/>
+
+        </div>
+  
+        <button type="submit" class= "boton">Predecir</button>
+  
+      </form>
+    </div>
+    
+  </body>
+  
+  </html>
+
